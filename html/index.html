@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>GROOVEMADE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+    <meta name="keywords" content="jquery plugin, item slider, categories, apple slider, css animation" />
+    <meta name="author" content="Codrops" />
+
+    <script src="js/modernizr.custom.63321.js"></script>
+</head>
+</head>
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid color p-0 ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="n2 d-lg-none">
+            <a href="index.html" class=" navbar-brand d-block d-lg-none n2" href="#">
+                <i class="fa-brands fa-accusoft"></i>GROOVEMADE
+            </a>
+        </div>
+        <div class="navbar-item color rightalign d-lg-none">
+            <a class="nav-link" href="#"><i class='fas fa-shopping-cart logo'></i> &nbsp;<span
+                    class="change">Cart</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown ">
+                    <a href="Moreitems.html" class="nav-link text-white nav-item" href="#" id="navbarDropdownMenuLink"
+                        aria-expanded="false">
+                        ata-bs-toggle="dropdown"
+                        Shop
+                    </a>
+
+                    <ul class="dropdown-menu nav-bar" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="row  container-fluid p-0 m-0 d1 ">
+
+                            <li class="col-4 col-xs-2"><a class="dropdown-item" href="#">Action</a></li>
+
+                            <li class="col-4 col-xs-2"><a class=" dropdown-item" href="#">Another action</a></li>
+                            <li class="col-4 col-xs-2"><a class=" dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </div>
+                    </ul>
+
+                </li>
+                <li class="nav-item color ">
+                    <a href="index.html" class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item color ">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+
+                <li class="nav-item color rightalign">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+
+
+                    <ul class="dropdown-menu nav-bar" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="row d1 container-fluid">
+
+                            <li class="col-4"><a class="dropdown-item col-lg-4" href="#">Action</a></li>
+
+                            <li class="col-4"><a class="dropdown-item col-lg-4" href="#">Another action</a></li>
+                            <li class="col-4"><a class="dropdown-item col-lg-4" href="#">Something else here</a>
+                            </li>
+                        </div>
+                    </ul>
+
+                </li>
+            </ul>
+            <div class="nb container-fluid">
+                <a href="index.html" class=" navbar-brand n1 d-none d-lg-block" href="#">
+                    <i class="fa-brands fa-accusoft"></i>GROOVEMADE
+                </a>
+
+            </div>
+            <div class="navbar-item color rightalign d-lg-block d-none">
+                <a class="nav-link" href="#"><i class='fas fa-shopping-cart logo'></i> &nbsp;<span
+                        class="change">Cart</span></a>
+            </div>
+        </div>
+
+
+    </div>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid color p-0">
+        <div class="container-fluid color p-0 ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class=" navbar-brand d-block d-lg-none n2" href="#">
+                <i class="fa-brands fa-accusoft"></i>GROOVEMADE
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav> -->
+<div class="banner responsive">
+    <h2>The Desk Shelf System</h2>
+    <p> Available in walnut, maple, matte black & matte white</p>
+    <a href="">LEARN MORE</a>
+</div>
+<div class="design">
+    <div class="firstDesign">
+        <h1>Design Inspires</h1>
+        <p class="alignment">Build your dream workspace, so <br> you can get your best work done.</p>
+        <a href="#" class="text-white">GET STARTED</a>
+    </div>
+</div>
+<div class="container-fluid image-section text-center">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="img/product1.avif" class="img img1" alt="">
+
+            <h3 class="d-sm-none img1-txt">Desk Pads</h3>
+            <!-- <span>Desk Pads</span> -->
+
+            <a href="#" class="lm  d-sm-none  img1-txt">LEARN MORE</a>
+
+        </div>
+        <!-- <h5 class=" d-md-none img1-txt">Desk Pads</h5> -->
+
+        <!-- <a href="#" class="lm  d-md-none  img1-txt">LEARN MORE</a> -->
+        <div class="col-sm-6 text-center img1-mq">
+            <img src="img/product2.avif" class="img img3" alt="">
+
+            <h3 class=" d-sm-none  img3-txt">Laptop Stands</h3><br>
+
+            <a href="#" class="lm d-sm-none  img3-txt">LEARN MORE</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid d-none d-sm-block">
+    <div class="row">
+        <div class="col-sm-6 p1 ">
+            <p>
+            <h3>Desk Pads</h3>
+            </p>
+            <a href="#" class="lm">LEARN MORE</a>
+        </div>
+        <div class="col-sm-6 p2 ">
+            <p>
+            <h3>Laptop Stands</h3>
+            </p>
+            <a href="#" class="lm p-2">LEARN MORE</a>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="carousel-main">
+    <h3>Featured Products</h3>
+    <p>See What’s Trending Right Now</p>
+
+
+</div>
+
+<div class="container">
+
+
+
+    <!-- <header class="clearfix">
+        <h1>Simple Multi-Item Slider <span>Category slider with CSS animations</span></h1>
+    </header> -->
+    <div class="main">
+        <div id="mi-slider" id="page-background" class="mi-slider page-bg">
+            <ul>
+                <li class=""><a href="#">
+                        <img src="img/items/item1.0.png" onmouseover="this.src='img/items/item1.1.png'"
+                            onmouseout="this.src='img/items/item1.0.png'" class="image page-bg" id="page-background"
+                            border="0" alt="" />
+                        <h4>Walnut MagSafe Stand</h4><br>
+                        <h4>$120</h4>
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/items/item2.0.png" onmouseover="this.src='img/items/item2.1.png'"
+                            onmouseout="this.src='img/items/item2.0.png'" class="image" border="0" alt="" />
+                        <h4>Walnut Ipad Stand</h4><br>
+                        <h4>$120</h4>
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/items/item3.0.png" onmouseover="this.src='img/items/item3.1.png'"
+                            onmouseout="this.src='img/items/item3.0.png'" class="image" border="0" alt="" />
+                        <h4>Walnut Monitor Stand</h4><br>
+                        <h4>$120</h4>
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/items/item4.0.png" onmouseover="this.src='img/items/item4.1.png'"
+                            onmouseout="this.src='img/items/item4.0.png'" class="image" border="0" alt="" />
+                        <h4>Walnut Headphone Stand</h4><br>
+                        <h4>$120</h4>
+                    </a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><a href="#">
+                            <img src="img/items/item5.0.png" onmouseover="this.src='img/items/item5.1.png'"
+                                onmouseout="this.src='img/items/item5.0.png'" class="image" border="0" alt="" />
+                            <h4>Walnut Keyboard Tray</h4><br>
+                            <h4>$120</h4>
+                        </a></li>
+                <li><a href="#">
+                        <img src="img/items/item6.1.png" onmouseover="this.src='img/items/item6.0.png'"
+                            onmouseout="this.src='img/items/item6.1.png'" class="image" border="0" alt="" />
+                        <h4>Walnut &amp; Leather mouse pad</h4><br>
+                        <h4>$120</h4>
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/items/item7.0.png" onmouseover="this.src='img/items/item7.1.png'"
+                            onmouseout="this.src='img/items/item7.0.png'" class="image" border="0" alt="" />
+                        <h4>Black pen</h4><br>
+                        <h4>$70</h4>
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/items/item8.0.png" onmouseover="this.src='img/items/item8.1.png'"
+                            onmouseout="this.src='img/items/item8.0.png'" class="image size" border="0" alt="" />
+                        <h4>Wool Felt Desk Pad</h4><br>
+                        <h4>$160</h4>
+                    </a></li>
+            </ul>
+            <!-- <ul>
+                <li><a href="#"><img src="images/9.jpg" alt="img09">
+                        <h4>Casual</h4>
+                    </a></li>
+                <li><a href="#"><img src="images/10.jpg" alt="img10">
+                        <h4>Luxury</h4>
+                    </a></li>
+                <li><a href="#"><img src="images/11.jpg" alt="img11">
+                        <h4>Sport</h4>
+                    </a></li>
+            </ul> -->
+            <!-- <ul>
+                <li><a href="#"><img src="images/12.jpg" alt="img12">
+                        <h4>Carry-Ons</h4>
+                    </a></li>
+                <li><a href="#"><img src="images/13.jpg" alt="img13">
+                        <h4>Duffel Bags</h4>
+                    </a></li>
+                <li><a href="#"><img src="images/14.jpg" alt="img14">
+                        <h4>Laptop Bags</h4>
+                    </a></li>
+                <li><a href="#"><img src="images/15.jpg" alt="img15">
+                        <h4>Briefcases</h4>
+                    </a></li>
+            </ul> -->
+            <nav class="dots">
+                <a href="#">.</a>
+                <a href="#">.</a>
+                <!-- <a href="#">.</a> -->
+                <!-- <a href="#">.</a> -->
+                <div class="d-inline-block float-end more-items-align">
+                    <a id="more-items" class="more-items" href="Moreitems.html">More Items</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- <a class="more-items" href="#">More Items</a> -->
+    <!-- <a class="more-items" href="#">More Items</a> -->
+</div><!-- /container -->
+
+<div class="banner1">
+    <h2>Home Office Inspiration</h2>
+    <p> You need a home office that helps you get your work done. Check out these creative workspace solutions for a
+        little inspiration to take your own space up a notch or two.</p>
+    <a href="">LEARN MORE</a>
+</div>
+
+<div class="secondDesign">
+    <h1>Made The Hard Way </h1>
+    <p>Our signature craftsmanship has been honed over a decade of manufacturing innovation here in Portland,
+        Oregon. We combine the skills of our small in-house team with the collective strength of collaborators
+        throughout the US to deliver quality products worth investing in.</p>
+</div>
+
+<iframe class="yt-frame d-none d-lg-block" width="42%" height="40%" src="https://www.youtube.com/embed/M167KGw57ho"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+<iframe class="yt-frame d-lg-none" width="69%" height="40%" src="https://www.youtube.com/embed/M167KGw57ho"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+<div class="secondDesign">
+    <h1>Make Work Meaningful </h1>
+    <p>We're here because we believe that your work deserves the best. A team that loves working together is the
+        magic that makes it all happen.</p>
+</div>
+
+
+<!-- <div class="row">
+    <div class="person-img image-body image1"></div>
+    <div class="image-body image2 "></div>
+    <div class="image-body image3"></div>
+    <div class="image-body image4"></div>
+    <div class="image-body image5"></div>
+    <div class="image-body image6"></div>
+</div> -->
+<!-- <div class="pb-5">
+
+    <div id="cf" class="person1 ft1 d-inline-block pad">
+
+        <a href="#"><img class="top img-fluid " src="img/person/person1.1.jpg" class="person1 img-fluid" alt="p1">
+            <img class="bottom img-fluid " src=" img/person/person1.0.png" class="person2 img-fluid" alt="p2"> <span
+                class="tooltip">LEARN MORE</span></a>
+    </div>
+    <div id="cf1" class="person2 d-inline-block pad ">
+        <a href="#"><img class="top img-fluid" src="img/person/person2.1.jpg" class="person1 img-fluid" alt="p1">
+            <img class="bottom img-fluid" src=" img/person/person2.0.png" class="person2 img-fluid" alt="p2"> <span
+                class="tooltip">LEARN MORE</span></a>
+    </div>
+    <div id="cf2" class="person2 d-inline-block pad">
+        <a href=""><img class="top img-fluid" src="img/person/person3.1.png" class="person1 img-fluid" alt="p1">
+            <img class="bottom img-fluid" src=" img/person/person3.0.png" class="person2 img-fluid" alt="p2"></a>
+    </div>
+    <div id="cf3" class="person2 d-inline-block pad">
+        <a href=""><img class="top img-fluid" src="img/person/person4.1.png" class="person1 img-fluid" alt="p1">
+            <img class="bottom img-fluid" src=" img/person/person4.0.png" class="person2 img-fluid" alt="p2"></a>
+    </div>
+    <div id="cf4" class="person2 d-inline-block pad">
+        <a href=""><img class="top img-fluid" src="img/person/person5.1.png" class="person1 img-fluid" alt="p1">
+            <img class="bottom img-fluid" src=" img/person/person5.0.png" class="person2 img-fluid" alt="p2"></a>
+    </div>
+    <div id="cf5" class="person2 d-inline-block pad">
+        <a href=""> <img class="top img-fluid" src="img/person/person6.1.png" class="person1 img-fluid" alt="p1">
+            <img class="bottom img-fluid" src=" img/person/person6.0.png" class="person2 img-fluid" alt="p2"></a>
+    </div>
+</div> -->
+<!-- <div class=" img-fluid">
+    <img src="img/person/person1.0.png" alt="" class="unhover">
+    <img src="img/person/person1.1.png" alt="" class="hover">
+</div> -->
+<!-- <img id="my-img" src="img/person/person1.0.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt="h1" /> -->
+
+<!-- <a href="#">
+    <img src="http://icons.iconarchive.com/icons/fasticon/angry-birds/128/yellow-bird-icon.png"
+        onmouseover="this.src='http://icons.iconarchive.com/icons/fasticon/angry-birds/128/red-bird-icon.png'"
+        onmouseout="this.src='http://icons.iconarchive.com/icons/fasticon/angry-birds/128/yellow-bird-icon.png'"
+        border="0" alt="" /></a> -->
+<!-- <a href="#">
+    <img src="img/person/person1.0.png" onmouseover="this.src='img/person/person1.1.png'"
+        onmouseout="this.src='img/person/person1.0.png'" class="image" border="0" alt="" /></a> -->
+
+
+
+<div class="lastdesign text-center">
+    <h1>We Hope You'll Join Us </h1>
+    <a href="#"> READ MORE ABOUT OUR STORY </a>
+</div>
+<footer>
+    <nav class="nabar">
+
+        <footer class="bg-dark text-center text-white">
+
+            <div class="container p-4">
+
+                <section class="mb-4">
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-google"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-linkedin-in"></i></a>
+
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-github"></i></a>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                </section>
+
+                <section class="">
+                    <form action="">
+
+
+
+
+
+
+                        <div class="row">
+                            <div class="col-5 col-md-3 pt-2">
+                                <label for="email" class="form-label" for="form5Example21">Email
+                                    address:</label>
+                            </div>
+                            <div class=" col-7 col-md-7 pb-5">
+                                <input type="email" id="emailid" class="form-control" placeholder="ABCD1234@GMAIL.COM">
+                            </div>
+                        </div>
+
+
+                        <div class="col-auto">
+
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+
+            </div>
+
+            </form>
+            </section>
+
+
+            <div class="container-fluid mb-5">
+
+
+                Sign up to our Newsletter to hear about new product releases, learn about our design
+                process, and everything else going on behind the scenes at Grovemade.
+
+            </div>
+
+
+
+            <!-- <section class="">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section> -->
+
+            </div>
+
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">GROOVEMADE</a>
+            </div>
+
+        </footer>
+        <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1230.4200177541863!2d72.8345203323404!3d19.202593036817326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6c40ccd9245%3A0x39db26ed3bed986c!2sTOWER-B%2C%20SAI%20DHAM%20COMPLEX%2C%20Kandivali%2C%20Kandivali%20West%2C%20Mumbai%2C%20Maharashtra%20400067!5e0!3m2!1sen!2sin!4v1658842432871!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+    </nav>
+</footer>
+
+
+
+<!-- /container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.catslider.js"></script>
+<script>
+    $(function () {
+
+        $('#mi-slider').catslider();
+
+    });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/d6389afc25.js" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.catslider.js"></script>
+
+<script>
+
+</script>
+</body>
+
+</html>

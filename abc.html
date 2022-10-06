@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="imgleft">
+            <div class="img1 disp" id="img1">
+                <img src="img/items/item1.0.png" class="small" alt="">
+            </div>
+            <div class="img2 disp" id="img2">
+                <img src="img/items/item2.0.png" class="small" alt="">
+            </div>
+            <div class="img3 disp" id="img3">
+                <img src="img/items/item3.0.png" class="small" alt="">
+            </div>
+            <div class="img4 disp" id="img4">
+                <img src="img/items/item4.0.png" class="small" alt="">
+            </div>
+        </div>
+        <div id="imgright">
+            <div class="img5 nodisp" id="img5">
+                <img src="img/items/item5.0.png" class="small" alt="">
+            </div>
+            <div class="img6 nodisp" id="img6">
+                <img src="img/items/item6.0.png" class="small" alt="">
+            </div>
+            <div class="img7 nodisp" id="img7">
+                <img src="img/items/item7.0.png" class="small" alt="">
+            </div>
+            <div class="img8 nodisp" id="img8">
+                <img src="img/items/item8.0.png" class="small" alt="">
+            </div>
+        </div>
+    </div>
+
+    <button id="next" onclick="myMove()">Next</button>
+    <button id="prev" onclick="prev()">Previous</button>
+
+</body>
+
+</html>
+
+<style>
+    #imgleft,
+    #imgright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 20px !important;
+    }
+
+    .small {
+        width: 350px;
+    }
+
+    .disp {
+        display: flex;
+    }
+
+    .nodisp {
+        display: none;
+    }
+</style>
+
+<script src="abc.js"></script>
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+</style>
+
+<script>
+    function myMove() {
+        for (var pos = 0; pos <= 600; pos++) {
+            task(pos);
+        }
+    }
+    function task(i) {
+        const elem = document.getElementById("imgright");
+        setTimeout(function () {
+            elem.style.right = i + "px";
+            console.log(i);
+        }, 1 * i);
+    }
+</script>
