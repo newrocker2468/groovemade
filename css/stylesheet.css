@@ -1311,6 +1311,40 @@ font-size: 1.18em;
     left: 46.6%;
     margin-bottom: 1em;
    }
+   .cssbuttons-io2{
+    left: 40.5% !important;
+    /* right:200px; */
+    display: grid;
+    place-items: center;
+    place-content: center;
+   } 
+   @media screen and (min-device-width:300px) and (max-device-width: 500px) { 
+    .cssbuttons-io2{
+        left: 30% !important;
+       } }
+   @media screen and (min-device-width:700px) and (max-device-width: 999px) { 
+    .cssbuttons-io2{
+        left: 38% !important;
+       } }
+   @media screen and (min-device-width: 999px) and (max-device-width: 1100px) { 
+    .cssbuttons-io2{
+        left: 40.5% !important;
+       } }
+   @media screen and (min-device-width: 1100px) and (max-device-width: 1299px) { 
+    .cssbuttons-io2{
+        left: 41% !important;
+       } 
+    }
+   @media screen and (min-device-width: 1300px) and (max-device-width: 1519px) { 
+    .cssbuttons-io2{
+        left: 42.5% !important;
+       } 
+    }
+   @media screen and (min-device-width: 1520px) and (max-device-width: 1800px) { 
+    .cssbuttons-io2{
+        left: 43.5% !important;
+       } 
+    }
    /* .cssbuttons-io:hover{
     color: rgb(255, 118, 118);
    } */
@@ -1344,7 +1378,8 @@ font-size: 1.18em;
     content: "";
     background: #000;
     width: 120%;
-    left: -10%;
+    left: -12%;
+    border: none;
     transform: skew(30deg);
     transition: transform 0.9s cubic-bezier(0.3, 1, 0.8, 1);
    }
@@ -1356,11 +1391,11 @@ font-size: 1.18em;
    .cssbuttons-io:active {
     transform: scale(0.95);
    }
-   #create{
-    left: 44% !important;
-    right: 40%;
-    font-size: 1em;
+   .aligntxt{
+    text-align: center;
    }
+
+
 
 #user,#pass,#pass1{
     line-height: 28px;
@@ -1408,6 +1443,7 @@ font-size: 1.18em;
     margin-top: 0.7em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     font-size: 1.1em;
+
  }
 
 .empty{
