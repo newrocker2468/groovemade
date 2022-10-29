@@ -1512,4 +1512,42 @@ color: #000;
 background: red;
     transition: 0.5s ease-in-out;
    }
-   
+   .main-image-terms{
+    margin-top:3em;
+    max-width: 100%;
+    margin-bottom:3em;
+   }
+   .image-borders{
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    display: grid;
+    place-items: center;
+  
+
+   }
+   .policies{
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Hubballi', sans-serif;
+    font-size: 3em;
+   }
+   .para{
+    padding-left: 21px !important; 
+    padding-right: 21px !important;
+    text-align: center !important;
+   }
+   .warranty{
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Hubballi', sans-serif;
+   }
+   .warranty>h2{
+    font-size: 50px;
+   }
+   .para>a{
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+   }
+
