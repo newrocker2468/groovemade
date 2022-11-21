@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROOVEMADE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+    <meta name="keywords" content="jquery plugin, item slider, categories, apple slider, css animation" />
+    <meta name="author" content="Codrops" />
+
+    <!-- <script src="js/modernizr.custom.63321.js"></script> -->
+</head>
+
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky " id="navbar">
+        <div class="container-fluid color p-0 ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="n2 d-lg-none">
+                <a href="index.html" class=" navbar-brand d-block d-lg-none n2" href="#">
+                    <i class="fa-brands fa-accusoft"></i>GROOVEMADE
+                </a>
+            </div>
+            <div class="navbar-item color rightalign d-lg-none">
+                <a class="nav-link" href="Mycart.html"><i class='fas fa-shopping-cart logo'></i> &nbsp;<span
+                        class="change">Cart</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown ">
+                        <a href="Moreitems.html" class="nav-link text-white nav-item" href="#" id="navbarDropdownMenuLink"
+                            aria-expanded="false">
+                        
+                            Shop
+                        </a>
+                       
+    
+                        <ul class="dropdown-menu nav-bar" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="row  container-fluid p-0 m-0 d1 ">
+    
+                                <li class="col-4 col-xs-2"><a class="dropdown-item" href="#">Action</a></li>
+    
+                                <li class="col-4 col-xs-2"><a class=" dropdown-item" href="#">Another action</a></li>
+                                <li class="col-4 col-xs-2"><a class=" dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </div>
+                        </ul>
+    
+                    </li>
+                    <li class="nav-item color ">
+                        <a href="index.html" class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item color ">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item color ">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+    
+                    <!-- <li class="nav-item color rightalign">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+    
+    
+                        <ul class="dropdown-menu nav-bar" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="row d1 container-fluid">
+    
+                                <li class="col-4"><a class="dropdown-item col-lg-4" href="#">Action</a></li>
+    
+                                <li class="col-4"><a class="dropdown-item col-lg-4" href="#">Another action</a></li>
+                                <li class="col-4"><a class="dropdown-item col-lg-4" href="#">Something else here</a>
+                                </li>
+                            </div>
+                        </ul>
+    
+                    </li>
+                </ul>
+                <div class="nb container-fluid">
+                    <a href="index.html" class=" navbar-brand n1 d-none d-lg-block" href="#">
+                        <i class="fa-brands fa-accusoft"></i>GROOVEMADE
+                    </a>
+    
+                </div>
+                <div class="navbar-item color rightalign d-lg-block d-none">
+                    <!-- <a href="https://www.flaticon.com/free-icons/empty-cart" title="empty cart icons">Empty cart icons created by Freepik - Flaticon</a> -->
+                    <a class="nav-link" href="Mycart.html"><i class='fas fa-shopping-cart logo'></i> &nbsp;<span
+                            class="change">Cart</span></a>
+                            <a href=""><!-- <img src="img/delete.png" height="25px"> --></a>
+                </div>
+            </div>
+    
+    
+        </div>
+        
+    </nav>
+<div class="groove">
+    <section style="margin-bottom: 10px; margin-top: 10px; font-size: 20px;">Grove LLC</section>
+    <h2 style="font-size: 40px;margin-bottom:20px;">Privacy Policy</h2></div>
+<span class="policy-align">Last Updated: July 15,2021</span>
+<div class="policy-content">
+    <h2>Teaming up to keep your privacy private</h2>
+    <p>Our motto at Grove LLC (“Grovemade,” “we,” “us,” etc.) is “Made the hard way.” We believe that great design inspires others, that craftsmanship and care matter, that there are no shortcuts when it comes to delivering office desk accessories that will help create your ideal workspace.
+But what shouldn’t be hard is respecting our customers’ privacy. When it comes to handling your personal information, we want you to rest easy, certain that we’re collecting, protecting, sharing, and using it responsibly, with an eye toward transparency. We also want to share how you can manage that information. This Privacy Policy is part of our effort to achieve these goals.
+As you interact with us, you will share your personal information in various ways. Sometimes we collect it directly from you on a voluntary basis. Other times, we use technology to automatically collect personal information. We also share our customers’ personal information with certain third parties that help support our business.
+This Policy applies to our Website <a style="color: inherit;"href="https://groovemade.ga/">(https://groovemade.ga/)</a> and any sites or products that display these terms. It does not apply to any website, mobile app, service, or product that does not display or link to this Privacy Policy or that contains its own privacy notice. If you do not agree with our policies and practices, please do not use our services. By accessing the Website or using our services, you agree to our use of your personal information in accordance with this Policy.</p>
+
+
+<h2>How we collect personal information</h2>
+<p>We may collect personal information from you directly or indirectly. When you fill out a form on our Website (to purchase one of our products, sign up for our email newsletter or submit a question or request using one of our online forms), you provide personal information directly to us. Other times, personal information is collected automatically as you use our Website. We also may receive personal information from third parties with whom we work.</p>
+<h2>We collect personal information when you provide it</h2>
+<p>When you purchase a product from us, you will provide personal information that includes your name, email address, mailing address, and your phone number. When you opt to receive our email newsletters, you will provide your email address.
+If you contact us by phone, you may provide personal information we use to answer your questions, resolve problems, or provide support. We also may collect personal information from you if you use our Website’s online chat feature to answer questions about products or orders.
+If you would like to join the Grovemade team, you may provide us with personal information that includes your name and contact information (email and physical address, phone number), employment history, and job title (either the one you have or the one you are applying for).</p>
+<h2>We collect personal information from third-party sources</h2>
+<p>We may collect personal information about you from third parties that help support our business, such as payment processors and companies that help our marketing efforts, or when you use social media networks to connect to our Website. Read more about our third-party sources here.
+We encourage customers to share their experiences with our products both on our site and social media networks. If you take part in a public conversation, for example, on Facebook, YouTube, or Twitter, we may collect personal information, such as your name and other information you have agreed to make available through your agreement with the social network. Another instance where we may collect personal information is when you click “Share This” or “Like” buttons or otherwise use social media buttons or plug-ins.</p>
+<h2>We collect personal information using automated technologies</h2>
+<p>Sometimes personal information is collected by automated technologies and shared with us when visitors or customers navigate through our Website. We may track your browsing actions, log your IP address, and identify your device (mobile phone, tablet, or computer and operating system).
+Other automated collection technologies – such as cookies, beacons, tags, and scripts – are used by us to analyze trends, administer the Website, and track users’ movements around the site. We, and our third-party partners, also use these technologies to gather demographic information about our user base as individuals and in the aggregate. Read more about our use of cookies here.</p>
+<h2>We will not knowingly collect information from anyone younger than 16 years</h2>
+<p>Our products may be used by anyone, including those younger than 16 years old. But we never knowingly sell products to anyone that young, nor do we collect personal information from them. If we become aware that personal information of anyone younger than 16 has been provided to us, without the proper consent, we will delete the information from our files.</p>
+<h2>Do-not-track requests</h2>
+<p>Some Internet browsers offer a “Do Not Track” privacy preference. Generally, when a user turns on the Do Not Track Signal, their browser sends a message to websites requesting that the user not be tracked. Our Website currently does not respond to “Do Not Track” signals.</p>
+<h2>How we use personal information</h2>
+<p>We know your personal information is important to you, so we want to be transparent about our use of that information. We use it for a variety of reasons, among them to provide easier, quicker access to our Website and products, make it convenient to pay for those products, and provide information about desktop accessories that may be of interest to you, both through our newsletter and posts on the Website.
+
+    As visitors and customers navigate the Website, their movements will be tracked and analyzed on an aggregated basis. This information allows us to improve their Website experience. We sometimes combine personal information from specific customers that allow us to predict who will find particular products most appealing. Tracking product purchases also helps us design and refine marketing campaigns.
+  
+</p>
+<span style="margin-left:40px"> We also use personal information:</span><br>
+<br>
+<ol>
+    <li>
+        To send marketing communications and newsletters through email, once you have subscribed.
+    </li>
+    <li>To provide advertisements through social media channels and other sites that are targeted to you based on your product purchases and interest.</li>
+    <li>
+        To respond to requests for support or exercise of legal rights.
+    </li>
+    <li>
+        To detect fraud, provide access to and maintain the security and integrity of the Website.
+    </li>
+    <li>
+        To provide updates regarding the Website and marketing information, such as special promotions or surveys, etc.
+    </li>
+    <li>
+        To comply with legal and regulatory requirements applicable to our business and internal policies for maintaining records.
+    </li>
+    <li>
+        To protect all parties in the event of disputes.
+    </li>
+    <li>
+        To comply with court orders and legal processes, and to enforce our Terms and Conditions and this Privacy Policy.
+    </li>
+    <li>
+        For any other legal, business, or marketing purposes that comply with the practices described in this Policy.
+    </li>
+</ol>
+<h2>When we share personal information</h2>
+<p class="small-para">Once your personal information is collected, as detailed above, we may share it with certain third parties for various reasons including to:</p>
+<ol>
+    <li>
+        make it easier to purchase our products.
+    </li>
+    <li>
+        manage customer requests and track product purchases.
+    </li>
+    <li>
+        manage customer emails and send marketing communications to customers who are likely to be interested in specific products.
+    </li>
+    <li>
+        help us evaluate Website traffic.
+    </li>
+    </ol>
+    <p>When we share your personal information with vendors and other third parties, we have entered into contracts that limit their use of the information to deliver the contracted services to us. We do not share your personal information, except as detailed in this Policy.</p>
+    <h2>If you make a public post, other users may see it</h2>
+    <p>If you make a post on a third-party social media site, such as Facebook, or by identifying us in your social media feed by tagging us using a hashtag (like #resetthedesk) or “at” (groovemadeinc@gmail.com), your personal information may be publicly available and is subject to the privacy policies of those third-party social media sites. As a reminder, this Policy describes how we will treat your personal information once it is in our possession.
+
+        We recommend you review the privacy policies of any third-party sites you visit to understand the data collection and practices of that third party.</p>
+        <h2>We may share feedback you provide to us</h2>
+        <p>We want to hear how we’re doing. If you have suggestions to improve our products and services, add to our product menu, or what to include in our newsletters, behind-the-scenes stories, and customer profiles, we want those as well.
+
+            We love to share success stories, particularly when customers are using our products. We encourage them to submit photos of themselves (or just their favorite desk accessories), which we believe develops community around better workspaces. By submitting a photo to us, we consider this your permission to use it on our Website. If you do not want us to use your image in this way, please do not submit it to us.
+            
+            Please be aware that any feedback relating to our products and services on our Website or social media channels may be publicly shared.</p>
+            <h2>Eventual successors may access information</h2>
+            <p>In the event of a merger, acquisition, reorganization, bankruptcy, or other sale of all or a portion of our assets, any customer information owned or controlled by us may be among the assets transferred to third parties as successors in interest. As part of this type of transaction, we reserve the right to transfer or assign your personal information to third parties. Other than to the extent ordered by a bankruptcy or other court, or as otherwise agreed to by you, the use and disclosure of all transferred customer information will be subject to this Policy.</p>
+            <h2>We need to comply with legal requirements</h2>
+            <p class="small-para">We may disclose your information to government authorities or other third parties if any lawful circumstances arise, including when:</p>
+            <ol>
+                <li>
+                    You have given us permission to share your information.
+                </li>
+                <li>
+                    We are required to do so by law, or in response to a subpoena or court order.
+                </li>
+                <li>
+                    We believe, in our sole discretion, that disclosure is reasonably necessary to protect against fraud, or to protect our property or other rights or those of other users of the Website, third parties, or the public at large.
+                </li>
+                <li>
+                    We believe that you have misused the Website by using it to attack or gain unauthorized access to a system or to engage in spamming or other conduct that violates applicable laws or our Terms and Conditions.
+                </li>
+                </ol>
+                <h2>How we secure personal information</h2>
+                <p>We have implemented commercially reasonable administrative, physical, and technology-based security measures to protect against loss, misuse, unauthorized access, and alteration of personal information in our systems. We ensure that any employee, contractor, corporation, organization, or vendor who has access to personal information in our systems is subject to legal and/or professional obligations to safeguard that personal information.
+
+                    While we strive to use commercially acceptable means to protect your personal information, no method of transmission over the Internet or form of electronic storage is 100 percent secure. Therefore, we cannot guarantee its absolute security.</p>
+                    <h2>Questions or concerns about our security or privacy.</h2>
+                    <p>If you feel that any of our privacy practices or security standards detailed in this Policy have not been followed, please contact us (see Contact Us at the end of this Policy for additional details).
+
+                        If you have received unwanted or unsolicited e-mail from us or purporting to be sent by us, please forward a copy of that email with your comments to groovemadeinc@gmail.com for our review.</p>
+                     <h2>Your Rights</h2>   
+                     <p>We understand that you want to protect and control your personal information. This section details how you may review, update, correct, or delete that information.</p>
+                     <h2>Updating or deleting your personal information</h2>
+                     <p>You may request that we update or delete your personal information by sending an email to groovemadeinc@gmail.com with “Personal Information Updates” in the subject line or by completing our online Web form and selecting “Personal Information Request”. Upon receiving your request, we will update or delete your personal information where allowed or required by applicable law.</p>
+                     <h2>Opting out of promotional emails</h2>
+                     <p>If you do not wish to receive promotional e-mails from us, you may follow the unsubscribe process at the bottom of the promotional e-mail you received or by emailing us at groovemadeinc@gmail.com. Please keep in mind that you still may receive transactional e-mails from us (such as e-mails related to the completion of your purchases, correction of user data, reminder e-mails you have requested, and other similar communications) that may be necessary for us to make the Website available to you or respond to your inquiries and support requests.</p>
+                     <h2>European Economic Area, Switzerland, and United Kingdom</h2>
+                     <p>Individuals residing in the European Economic Area (EEA), including Switzerland, and the United Kingdom (UK) have additional rights granted under the General Data Protection Regulation (GDPR), the UK Data Protection Act and/or ePrivacy Directive, as applicable. In addition to any of the general rights granted to you under this Privacy Policy, you have the following data protection rights:</p>
+                     <ol>
+                        <li>
+                            You may request to access, correct, update or request deletion of your personal information based on information collected from accessing our Website.
+                        </li>
+                        <li>
+                            You may request additional information related to the purposes for which we process your personal information, the categories of personal information we process, where we originally collected the information, who we share it with, and how long we will retain it.
+                        </li>
+                        <li>
+                            You have the right to opt-out of marketing communications we sent you at any time. You can do so by clicking the “unsubscribe” or “opt-out” link in the marketing emails we send to you. You may also opt-out of other forms of marketing (such as postal or telemarketing).
+                        </li>
+                        <li>
+                            Where we have collected and processed your personal information with your consent, you can withdraw your consent at any time. However, withdrawing your consent will not affect the lawfulness of any processing we conducted prior to your withdrawal nor will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.
+                        </li>
+                        <li>
+                            You have the right to submit a complaint to a data protection authority about our collection and use of your personal information. For more information, please contact your local data protection authorities. Contact details are available here.
+                        </li>
+                     
+                        </ol>
+<h2>International Transfers</h2>
+<p>Grovemade is headquartered in the United States. Your personal information will be transferred to, processed, and maintained on computer systems located in the United States.
+
+    The United States currently is not a country the European Union has deemed “adequate” under applicable data protection laws. Grovemade collects, transfers, and processes personal information under terms required by applicable law, including: when you provide your consent, to perform a contract with you (such as to deliver products), or to fulfill a compelling legitimate interest of Grovemade in a manner that does not outweigh your rights and freedoms. Grovemade may enter into data protection agreements or other legally approved mechanisms with its vendors to support compliance with applicable law.
+    
+    We have taken appropriate safeguards to require that the personal information we process will remain protected in accordance with this Policy when transferred internationally, including when processed internationally by third-party service providers and partners. The safeguards we have taken include implementing the European Commission's Standard Contractual Clauses or Binding Corporate Rules, for any transfer of personal information to non-EEA third-party service providers or business partners.
+    
+    To make a request, please contact us at groovemadeinc@gmail.com with “Personal Information Request” in the subject line. Provide full details relating to your request, including your contact information and any other details you believe are relevant. We are committed to responding to requests to exercise data protection rights in accordance with applicable data protection laws.</p>
+    <h2>California Consumer Rights</h2>
+    <p class="small-para">The California Consumer Privacy Act provides specific rights to those who live in the state of California. If you are a California-based consumer, as that term is defined under California law, this section shall apply in addition to all other applicable rights and information contained in this Policy:</p>
+    <ol>
+        <li>
+            You have the right to request that we provide you with information about what personalinformation we collect, use, and disclose.
+        </li>
+        <li>
+            You have the right to request that we delete personal information we, or our service providers, store about you.
+        </li>
+        <li>
+            We will not discriminate or retaliate against you if you elect to exercise any rights under this section of our Privacy Policy.
+        </li>
+        <li>
+            You may request that we not sell your personal information. We do not sell, rent, lease, or trade your personal information with third parties, except as described in this Policy.
+
+        <li>
+            You have the right to designate an authorized agent to make a request on your behalf. Please see the Identity Verification Requirement below for information on our process for verifying we have received a legally valid request.
+        </li>
+      
+        </ol>
+<p>If you are a California consumer and have additional questions based on this section of our Privacy Policy, email us at groovemadeinc@gmail.com or submit a request via our Web form and select “Personal Information Request” from the dropdown list. Be sure to check this Policy for updates, as we will review it at least every 12 months and make necessary changes.</p>
+<h2>Identity verification requirement</h2>
+<p>The law requires us to verify that any request submitted was made by someone with the legal right to access the information. Therefore, before accessing or disclosing any information pursuant to a data access request, we may request additional information to verify your identity and legal authority, particularly when the information provided with the request is insufficient for us to confirm legal authority and/or identity.
+com
+    To make a request, please contact us at groovemadeinc@gmail.com with “Personal Information Request” in the subject line or submit a request via our Web form and select “Personal Information Request” from the dropdown list. Please provide full details about your request, including your contact information and anything you believe is relevant. We will provide a response to an access request within the timeframes required by law. If we cannot substantively respond in a timely manner, we will notify you and provide the reason for the delay.
+    
+    Under certain circumstances, we may not fulfill your request, such as when doing so would interfere with our regulatory or legal obligations, when we cannot verify your identity, if your request involves disproportionate cost or effort, or when the law allows us to retain that information. But we will respond to your request within a reasonable time, as required by law, and provide an explanation.</p>
+<h2>Updates</h2>
+<p id="Contact-us">This Privacy Policy will be updated to reflect our personal information handling practices. We reserve the right to amend this Policy at any time, for any reason, without additional notice to you, other than through posting the updated Privacy Policy on our Website. We invite you to return to this page to ensure you are informed of any updates we make about how we collect, use, and protect personal information. You can see when this Privacy Policy was last updated by checking the “last updated” date displayed at the beginning of this Policy.</p>
+
+<h2>Contact Us</h2>
+<p class="small-para" style="text-align: center;">If you have questions about the way we handle personal information, please contact us:</p>
+<section style="text-align: center; font-size: 20px;" class="contact1">Grove, LLC<br>
+    6524 N Albina Avenue<br>
+    Portland, Oregon 97217<br>
+    groovemadeinc@gmail.com
+</section>
+
+
+</div>
+<div class="mapcontact">
+<div class="map">
+ 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.9988049115877!2d-122.67676474895458!3d45.57046263426519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a707f5f99885%3A0x9b3d9dc59b72117c!2s6524%20N%20Albina%20Ave%2C%20Portland%2C%20OR%2097217%2C%20USA!5e0!3m2!1sen!2sin!4v1668949826030!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+
+<div class="contact"> 
+
+ Grove, LLC<br>
+    6524 N Albina Avenue<br>
+    Portland, Oregon 97217<br>
+    groovemadeinc@gmail.com
+  </div>
+</div>
+<!-- <div class="contact">
+  <section style="text-align: center; font-size: 20px; " class="contact">Grove, LLC<br>
+    6524 N Albina Avenue<br>
+    Portland, Oregon 97217<br>
+    groovemadeinc@gmail.com
+</section></div> -->
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.9988049115877!2d-122.67676474895458!3d45.57046263426519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a707f5f99885%3A0x9b3d9dc59b72117c!2s6524%20N%20Albina%20Ave%2C%20Portland%2C%20OR%2097217%2C%20USA!5e0!3m2!1sen!2sin!4v1668949826030!5m2!1sen!2sin" width="1600" height="450" style="border:0; margin-top:30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="lastdesign text-center">
+        <h1>We Hope You'll Join Us </h1>
+        <a href="aboutus.html" id="a-animation"> READ MORE ABOUT OUR STORY </a>
+    </div>
+    <footer>
+        <nav class="nabar">
+          <footer class="bg-dark text-center text-white">
+            <div class="container p-4">
+              <section class="mb-4">
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="https://www.facebook.com/"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+  
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="https://twitter.com/login"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+  
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="https://accounts.google.com/servicelogin?service=mail"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+  
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="https://www.instagram.com/accounts/login/"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+  
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="https://www.linkedin.com/in/jaskaran-s-c-62b3bb245/"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+  
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="https://github.com/"
+                  role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <div class="row d-flex justify-content-center">
+                  <div class="col-auto">
+                    <p class="pt-2">
+                      <strong>Sign up for our newsletter</strong>
+                    </p>
+                  </div>
+                </div>
+              </section>
+  
+              <section class="">
+                <form action="">
+                  <div class="row">
+                    <div class="col-5 col-md-3 pt-2">
+                      <label for="email" class="form-label" for="form5Example21"
+                        >Email address:</label
+                      >
+                    </div>
+                    <div class="col-7 col-md-7 pb-5">
+                      <input
+                        type="email"
+                        id="emailid"
+                        class="form-control"
+                        placeholder="ABCD1234@GMAIL.COM"
+                      />
+                    </div>
+                  </div>
+  
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </section>
+            </div>
+  
+            <div class="container-fluid mb-5">
+              Sign up to our Newsletter to hear about new product releases, learn
+              about our design process, and everything else going on behind the
+              scenes at Grovemade.
+            </div>
+  
+            <section class="">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Account</h5>
+  
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="login.html" class="text-white">Log In</a>
+                    </li>
+                    <li>
+                      <a href="Mycart.html" class="text-white">My Orders</a>
+                    </li>
+                    <li>
+                      <a href="create.html" class="text-white"
+                        >Create New Account</a
+                      >
+                    </li>
+  
+                   
+                  </ul>
+                </div>
+  
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Follow Us</h5>
+  
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        href="https://www.instagram.com/accounts/login/"
+                        class="text-white"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/" class="text-white"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/login" class="text-white"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li>
+                   
+                  </ul>
+                </div>
+  
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Support</h5>
+  
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="return.html" class="text-white">Returns & Exchanges</a>
+                    </li>
+                    <li>
+                      <a href="policy.html#Contact-us" class="text-white"
+                        >Contact Us</a
+                      >
+                    </li>
+                  
+                    <li>
+                      <a href="pageindev.html" class="text-white"
+                        >Chat With our Support Executives(coming soon)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">IMP Links</h5>
+  
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="policy.html" class="text-white"
+                        >Privacy and policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="Terms.html" class="text-white"
+                        >Terms and conditions</a
+                      >
+                    </li>
+                   
+                    <li>
+                      <a href="store.html" class="text-white"
+                        >Nearest Gm store(coming soon)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+            <div
+              class="text-center p-3"
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              © 2022 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">GROOVEMADE</a>
+            </div>
+          </footer>
+        </nav>
+      </footer>
+    </body>
+    </html>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.catslider.js"></script>
+<script>
+    $(function () {
+
+        $('#mi-slider').catslider();
+
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/d6389afc25.js" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.catslider.js"></script>
+
+<script type="text/javascript">
+    (function(){
+       function onReady() {
+         document.body.classList.remove('no-scroll');
+       }
+       
+       if ( document.readyState === 'complete' ) {
+          onReady();
+       } else {
+          document.addEventListener('DOMContentLoaded', onReady);
+       }
+    })();
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>

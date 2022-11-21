@@ -1,3 +1,29 @@
+$(document).ready(() => {
+  const body = document.getElementById("body-main");
+  setTimeout(() => {
+    body.className = "scroll";
+  }, 2000);
+});
+
+window.onscroll = function () {
+  myFunction();
+};
+
+$(function () {
+  $("#mi-slider").catslider();
+});
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 let items = document.querySelectorAll(".carousel .carousel-item");
 
 items.forEach((el) => {
@@ -74,14 +100,29 @@ $(".image").hover(
   }
 );
 
-$(window).on('beforeunload', function(){
+$(window).on("beforeunload", function () {
   $(window).scrollTop(0);
 });
 window.onbeforeunload = function () {
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 };
-history.scrollRestoration = "manual";
 
-$(window).on('beforeunload', function(){
-      $(window).scrollTop(0);
+$(window).on("beforeunload", function () {
+  $(window).scrollTop(0);
 });
+$("#test").delay(2650).animate({ opacity: "1" }, 900);
+$("#test1").delay(600).animate({ opacity: "1" }, 900);
+
+ function Show(){
+  document.getElementById('rickroll').play();
+  document.getElementById("rickroll").style.display = "flex";
+  document.getElementById("rickroll").style.justifyContent = "center";
+  document.getElementById("rickroll").style.alignItems = "center";
+
+
+ }
+ function Hide(){
+  document.getElementById('rickroll').pause();
+  document.getElementById("rickroll").style.display = "none";
+ }
+
