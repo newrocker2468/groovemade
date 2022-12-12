@@ -104,7 +104,7 @@
 		  this.isAnimating = false;
 		}
 	  },
-	  // based on http://stackoverflow.com/a/8840703/989439
+
 	  forceRedraw: function (element) {
 		if (!element) {
 		  return;
