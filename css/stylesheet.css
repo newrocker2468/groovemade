@@ -1593,7 +1593,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 1.5px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   transition: all 0.7s ease-in-out;
 }
@@ -1618,7 +1618,7 @@ body {
 }
 #test,
 #test1 {
-  opacity: 0;
+  opacity: 1;
 }
 .groove {
   margin-top: 60px;
@@ -1756,4 +1756,18 @@ ol {
   align-items: center;
   margin-top: 60px;
 
+}
+.txt-reveal{
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition:  all 1.5s;
+  transform: translateY(-3em);
+
+}
+.local{
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition:  all 1.5s;
+  transform: translateY(-3em);
+}
+#web-fix{
+  margin-left:none !important;
 }

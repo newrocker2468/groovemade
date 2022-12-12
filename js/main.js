@@ -110,7 +110,7 @@ window.onbeforeunload = function () {
 $(window).on("beforeunload", function () {
   $(window).scrollTop(0);
 });
-$("#test").delay(2650).animate({ opacity: "1" }, 900);
+$("#test").delay(200).animate({ opacity: "1" }, 900);
 $("#test1").delay(600).animate({ opacity: "1" }, 900);
 
  function Show(){
@@ -125,4 +125,5 @@ $("#test1").delay(600).animate({ opacity: "1" }, 900);
   document.getElementById('rickroll').pause();
   document.getElementById("rickroll").style.display = "none";
  }
+
 
