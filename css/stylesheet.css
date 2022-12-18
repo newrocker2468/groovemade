@@ -915,13 +915,31 @@ body {
   position: relative;
 }
 
-#cf {
+/* #cf,#cf1,#cf2,#cf3,#cf4,#cf5,#cf6{
+  position: relative;
+  height: 35vh;
+  width: 16%;
+} */
+
+/* #cf img,#cf1 img ,#cf2 img,#cf3 img,#cf4 img,#cf5 img,#cf6 img{
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+} */
+
+/* #cf img.bottom:hover,#cf1 img.bottom:hover,#cf2 img.bottom:hover,#cf3 img.bottom:hover,#cf4 img.bottom:hover,#cf5 img.bottom:hover,#cf6 img.bottom:hover {
+  opacity: 0;
+} */
+#cf{
   position: relative;
   height: 35vh;
   width: 16%;
 }
 
-#cf img {
+#cf img{
   position: absolute;
   left: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -934,99 +952,11 @@ body {
   opacity: 0;
 }
 
-#cf1 {
-  position: relative;
-  height: 35vh;
-  width: 16%;
-}
 .pad {
   margin-left: 1%;
-  margin-right: 1%;
-  /* margin-bottom:  7%; */
-}
-#cf1 img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  margin-bottom:  3%;
 }
 
-#cf1 img.bottom:hover {
-  opacity: 0;
-}
-
-#cf2 {
-  position: relative;
-  height: 35vh;
-  width: 16%;
-}
-#cf2 img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
-#cf2 img.bottom:hover {
-  opacity: 0;
-}
-
-#cf3 {
-  position: relative;
-  height: 35vh;
-  width: 16%;
-}
-#cf3 img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
-#cf3 img.bottom:hover {
-  opacity: 0;
-}
-
-#cf4 {
-  position: relative;
-  height: 35vh;
-  width: 16%;
-}
-#cf4 img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
-#cf4 img.bottom:hover {
-  opacity: 0;
-}
-
-#cf5 {
-  position: relative;
-  height: 35vh;
-  width: 16%;
-}
-#cf5 img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-#cf5 img.bottom:hover {
-  opacity: 0;
-}
 
 .alignment {
   padding-bottom: 10%;
@@ -1044,48 +974,32 @@ body {
   right: 50%;
 }
 @media screen and (min-device-width: 300px) and (max-device-width: 430px) {
-  #cf,
-  #cf1,
-  #cf2,
-  #cf3,
-  #cf4,
-  #cf5 {
+  #cf
+ {
     width: 15%;
-    height: 10vh;
-  }
-}
-@media screen and (min-device-width: 430px) and (max-device-width: 560px) {
-  #cf,
-  #cf1,
-  #cf2,
-  #cf3,
-  #cf4,
-  #cf5 {
-    width: 15%;
-    height: 15vh;
-  }
-}
-@media screen and (min-device-width: 561px) and (max-device-width: 750px) {
-  #cf,
-  #cf1,
-  #cf2,
-  #cf3,
-  #cf4,
-  #cf5 {
-    width: 10%;
     height: 20vh;
   }
 }
-@media screen and (min-device-width: 750px) and (max-device-width: 1800px) {
-  #cf,
-  #cf1,
-  #cf2,
-  #cf3,
-  #cf4,
-  #cf5 {
-    width: 14%;
+@media screen and (min-device-width: 430px) and (max-device-width: 560px) {
+  #cf
+  {
+    width: 15%;
+    height: 20vh;
+  }
+}
+@media screen and (min-device-width: 561px) and (max-device-width: 750px) {
+  #cf
+  {
+    width: 15%;
     height: 25vh;
-    margin-bottom: 10%;
+  }
+}
+@media screen and (min-device-width: 750px) and (max-device-width: 1800px) {
+  #cf
+{
+    width: 15%;
+    height: 35vh;
+    margin-bottom: 7%;
   }
 }
 .dots {
@@ -1663,6 +1577,10 @@ ol {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+@media (max-width:900px) {
+  .contact {
+    display: none;
+  }}
 @media (min-width: 1100px) {
   .mapcontact {
     display: flex;
@@ -1708,15 +1626,15 @@ ol {
     justify-content: center;
   }
   .mapcontact {
-    display: flex;
+    display: flex !important;
     justify-content: space-around;
     margin-top: 30px;
   }
 }
 @media (max-width: 900px) {
-  .contact {
+  /* .contact {
     display: none;
-  }
+  } */
   .map {
     overflow: hidden;
     margin-top: 50px;

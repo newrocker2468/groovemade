@@ -113,17 +113,21 @@ $(window).on("beforeunload", function () {
 $("#test").delay(200).animate({ opacity: "1" }, 900);
 $("#test1").delay(600).animate({ opacity: "1" }, 900);
 
+
  function Show(){
-  document.getElementById('rickroll').play();
-  document.getElementById("rickroll").style.display = "flex";
-  document.getElementById("rickroll").style.justifyContent = "center";
-  document.getElementById("rickroll").style.alignItems = "center";
-
+  let xx = document.getElementById("rickroll");
+       if( xx.style.display === "none"){
+       xx.play();
+       xx.style.display = "flex";
+       xx.style.justifyContent = "center";
+       xx.style.alignItems = "center";
+       }
+       else{
+      xx.style.display = "none";
+      xx.pause()
+      xx.currentTime = 0;}
 
  }
- function Hide(){
-  document.getElementById('rickroll').pause();
-  document.getElementById("rickroll").style.display = "none";
- }
+
 
 
