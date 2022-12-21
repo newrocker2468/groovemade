@@ -943,6 +943,8 @@ body {
   position: relative;
   height: 35vh;
   width: 16%;
+  
+  /* overflow: hidden; */
 }
 
 #cf img{
@@ -958,10 +960,13 @@ body {
   opacity: 0;
   cursor: pointer;
 }
-
+.person-box{
+  margin-left: 15px;
+  margin-right: 15px;
+}
 .pad {
   margin-left: 1%;
-  margin-bottom:  3%;
+  
 }
 
 
@@ -1008,7 +1013,7 @@ body {
     height: 25vh;
   }
 }
-@media screen and (min-device-width: 750px) and (max-device-width: 2000px) {
+@media screen and (min-device-width: 750px) {
   #cf
 {
     width: 15%;
@@ -1702,5 +1707,6 @@ ol {
   transform: translateY(-3em);
 }
 #web-fix{
-  margin-left:none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
