@@ -42,7 +42,7 @@ body {
   /* font-weight: 800; */
   font-size: 0.5em;
 }
-@media (max-width: 1800px) {
+@media (minwidth:425px) and (max-width: 1800px) {
   .rightalign > a {
     padding-right: 4em !important;
     padding-left: 0.5em !important;
@@ -960,6 +960,32 @@ body {
   opacity: 0;
   cursor: pointer;
 }
+#cf1{
+  position: relative;
+
+  width:60%;
+                height:300px;
+  
+  /* overflow: hidden; */
+}
+
+#cf1 img{
+  position: absolute;
+  left: 0;
+  max-width: 100%;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#cf1 img.bottom:hover {
+  opacity: 0;
+  cursor: pointer;
+}
 .person-box{
   margin-left: 15px;
   margin-right: 15px;
@@ -1561,7 +1587,7 @@ body {
   text-align: center;
 }
 .policy-align {
-  left: 450px;
+  left: 14em;
   position: relative;
 }
 .policy-content > h2 {
