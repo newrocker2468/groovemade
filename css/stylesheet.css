@@ -19,6 +19,7 @@ body {
   background-color: black !important;
   color: rgb(255, 255, 255) !important;
   width: 100% !important;
+  height: auto!important;
 
   -webkit-box-sizing: border-box !important;
   -moz-box-sizing: border-box !important;
