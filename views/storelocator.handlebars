@@ -1,0 +1,39 @@
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+        <script src="js/modernizr.custom.63321.js"></script>
+
+
+
+          
+<div>
+  <h2 style="font-family: 'Ledger', sans-serif; text-align: center; font-size: 2.5em; margin-top: 60px;">Nearest Groovemade Store Locator</h2>
+</div>
+    <div class="main1">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9620263600004!2d72.86239255048271!3d19.109321755826524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8383690e91b%3A0xed1a15e83c3100e6!2sSukhdayak%20Apartment%20Block-D%2C%20Shriniwas%20Bagarka%20Rd%2C%20J.B.%20Nagar%2C%20Tarun%20Bharat%2C%20Andheri%20East%2C%20Mumbai%2C%20Maharashtra%20400059!5e0!3m2!1sen!2sin!4v1669016493178!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapper"></iframe>
+      </div>
+      <div class="selector">
+        <h3>Select a Store Location</h3>
+        <select name="location" id="location" class="form-select" onchange="changeMap()">
+          <option value="andheri">Andheri</option>
+          <option value="kandivali">Kandivali</option>
+          <option value="thane">Thane</option>
+          <option value="Kharghar">kharghar</option>
+          <option value="vile-parle">Vile-parle</option>
+          <option value="worli">Worli</option>
+        </select>
+      </div>
+    </div>
+    <div style="margin-left: 50px;margin-right: 50px;">
+      <p>If you are not satisfied with the product contact the nearest store located or write to us at groovemade.inc@gmail.com we will reply as soon as possible average time for reply is 10- 15 business days, you can also request for return 
+        if it meets the specified <a href="Terms.html" style="color: inherit;" id="a-animation">Terms & Conditions</a>.You can also get information about exchanges and on return also at <a href="return.html" style="color: inherit;"id="a-animation">Returns & Exchanges</a>
+      </p>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/changeMap.js"></script>
